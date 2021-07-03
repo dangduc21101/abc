@@ -60,6 +60,10 @@ allow * * * 80-88,8080-8088 HTTP
 allow * * * 443,8443 HTTPS
 allow * * * 1-65535 HTTP
 allow * * * 1-65535 HTTPS
+allow 171.246.216.235 * * 80-88,8080-8088 HTTP
+allow 171.246.216.235 * * 443,8443 HTTPS
+allow 171.246.216.235 * * 1-65535 HTTP
+allow 171.246.216.235 * * 1-65535 HTTPS
 proxy -n -p3128 -a
 
 $(awk -F "/" '{print "auth iponly\n" \
